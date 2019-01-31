@@ -6,19 +6,19 @@
      <param name="scan_string" value="zed/scan"/>
      
      <!-- Speed command to publish (Topic: geometry_msgs::Twist) -->
-     <param name="cmd_vel_string" value="wandering/cmd_vel"/>
+     <param name="cmd_vel_string" value="/cmd_vel"/>
 
      <!-- Reference frame for rviz visualization (default: base_link)-->
-     <param name="frame_link" value="zed_depth_frame"/>
+     <param name="frame_link" value="base_link"/>
 
      <!-- Points nearest than this distance are really dangerous and repulsion force is doubled -->
-     <param name="dangerThresh" value="0.6"/>
+     <param name="dangerThresh" value="0.9"/>
 
      <!-- If the 'dangerPtsPerc'% of the points is in dangerous zone, the robot stops and turns -->
      <param name="dangerPtsPerc" value="10"/>
 
      <!-- Over this distance (meter) the point become attractive instead of repulsive -->
-     <param name="repThresh" value="1.5"/>     
+     <param name="repThresh" value="1.8"/>     
 
      <!-- Max Laser value (meter) -->
      <param name="maxLaserVal" value="8"/>
@@ -27,10 +27,10 @@
      <param name="secureWidth" value="0.7"/>
 
      <!-- Max forward speed (m/sec) -->
-     <param name="maxFwSpeed" value="0.8"/>
+     <param name="maxFwSpeed" value="1.8"/>
 
      <!-- Max rotation speed (rad/sec) -->
-     <param name="maxRotSpeed" value="9.4"/>
+     <param name="maxRotSpeed" value="7.5"/>
 
      <!-- Indicates if the robot must stop and turn around when no laser info are available (obstacle too near) -->
      <param name="noInfoTurnAround" value="False"/>
